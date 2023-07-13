@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarByte | Homepage</title>
+    <link href="/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/794cf2573f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="overflow-hidden">
+    <header class="bg-green-600 text-white sticky top-0 z-10">
+        <section class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-semibold">
+                <a href="#hero">SolarByte</a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                    <!-- &#9776; -->
+                    <div
+                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </div>
+                </button>
+
+            </div>
+            <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <i class="fa-solid fa-user"></i>
+            </nav>
+        </section>
+        <section id="mobile-menu"
+            class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
+            <!-- <button class="text-8xl self-end px-6">
+                  &times;
+              </button> -->
+            <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
+                <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
+                <a href="#testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
+                <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="bg-gray-300 h-screen  flex items-center justify-center shadow-lg">
+        <div class="mx-auto container flex flex-col justify-center items-center ">
+            <div class="-mt-14 mb-6 text-center">
+                <h2 class="text-3xl font-semibold mb-2">Purchase SolarBytes</h2>
+                <p class="-mt-2 font-medium">How many solarbytes do you need?</p>
+            </div>
+            <div class="flex flex-col gap-7">
+                <div class="grid grid-cols-2 gap-12">
+                    <div>
+                        <input type="number" disabled
+                            class="w-full py-3 pl-2 border border-gray-700 rounded disabled:bg-white placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            name="" id="controllerNumber" placeholder="Controller Number">
+                    </div>
+                    <div>
+                        <!-- <input type="text" name="" id=""
+                            class="pl-2 py-3 border border-gray-700 rounded placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            placeholder="Housing District"> -->
+                        <label for="cars"></label>
+                        <select id="cars" name="cars" id="housingDistrict"
+                            class="pl-2 py-3 w-full border border-gray-700 rounded placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            placeholder="Housing District">
+                            <option value="Ilupeju Plant">Ilupeju Plant</option>
+                            <option value="Gbagada Plant">Gbagada Plant</option>
+                            <option value="Ibafo Plant" selected>Ibafo Plant</option>
+                            <option value="Mowe Plant">Mowe Plant</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Start Debug -->
+                <div class="w-full grid grid-cols-2 gap-12">
+                    <div class="w-full">
+                        <input type="text"
+                            class="py-3 pl-2 border border-gray-700 rounded placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            name="" id="email" placeholder="Email Address">
+                    </div>
+
+                    <div>
+                        <input type="tel" id="phone" name=""
+                            class="pl-2 py-3 border border-gray-700 rounded disabled:bg-white placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-12">
+                    <div>
+                        <input type="number"
+                            class="w-full pl-2 py-3 border border-gray-700 rounded placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            name="" id="units-input" placeholder="Number of Units">
+
+                    </div>
+                    <div>
+                        <input type="text" name="" id="price-equivalence" disabled
+                            class="pl-2 py-3 border border-gray-700 rounded disabled:bg-white placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                            placeholder="Price Equivalence">
+
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <input type="tel"
+                        class="py-3 w-full pl-2  border border-gray-700 rounded placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm"
+                        name="" id="payment-reference" placeholder="Payment Reference">
+                </div>
+
+                <div class="w-full">
+                    <button id="continueBtn" class="w-full rounded text-xl text-white font-semibold py-4 bg-green-600">
+                        CONTINUE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <footer class="bg-red-600 pb-4 w-full relative -top-20">
+            <p class="">footer
+            </p>
+        </footer> -->
+
+
+        <!-- Purchase Confirmation -->
+        <section id="purchase"
+            class="hidden w-full overflow-x-hidden -bottom-8 bg-gray-400 bg-opacity-60 min-h-screen flex items-center justify-center shadow-lg -translate-y-full -mt-12">
+            <div class="p-10 text-center container mx-auto w-1/4 bg-white lg:flex-row lg:w-3/12 shadow-lg rounded-xl">
+                <h2 class="text-2xl text font-bold mb-2 py-4">Order Summary</h2>
+                <div class="grid grid-cols-3 gap-3 py-2">
+                    <p class="font-semibold text-sm">SolarByte Plant</p>
+                    <p class="font-semibold text-sm">Units</p>
+                    <p class="font-semibold text-sm">Total Amount</p>
+                </div>
+                <div class="grid grid-cols-3 gap-3">
+                    <p id="selectedPlant" class="font-normal text-sm">Abuja Plant</p>
+                    <p id="selectedUnits" class="font-normal text-sm">5Kw</p>
+                    <p id="totalAmount" class="font-normal text-sm">N5000</p>
+                </div>
+                <div class="mt-5">
+                    <button
+                        class="w-1/2 bg-green-600 py-2 font-medium text-center text-white rounded-lg shadow-lg">Confirm</button>
+                </div>
+                <a href="purchase.html" class="mt-6 font-semibold text-sm">Edit Order</a>
+
+            </div>
+        </section>
+
+        <script src="../build/js/signup.js"></script>
+        <script src="../build/js/purchase.js"></script>
+</body>
+
+</div>

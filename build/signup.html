@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarByte | Homepage</title>
+    <link href="/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/794cf2573f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="overflow-hidden">
+    <section class="bg-gray-300 min-h-screen flex items-center justify-center shadow-lg">
+        <div class="container mx-auto">
+            <div class="rounded-2xl flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white  mx-auto shadow-lg">
+                <div class=" w-full lg:w-1/2 flex flex-col items-center p-12 justify-center bg-cover bg-center bg-no-repeat text-white rounded-tl-2xl rounded-bl-2xl"
+                    style="background-image: url('img/see.jpg')">
+                </div>
+                <div class="w-full lg:w-1/2 py-10 px-6 text-center">
+                    <h2 class="text-2xl text font-semibold mb-2">Want to get out of darkness? </h2>
+                    <p class="text font-semibold">Register and power up!</p>
+                    <form id="form" class="px-10 ">
+                        <div
+                            class="borderInput w-full flex flex-row justify-between mt-5 border-0 border-black relative">
+                            <span><i class="fa-solid fa-user absolute top-1/2 left-2 -translate-y-1/2"></i></span>
+                            <input type="text" placeholder="Full Name" id="full-name"
+                                class="pl-8 w-full outline-none text-left border-2 border-black text-black py-2 w-contain placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="error font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                        </div>
+                        <div
+                            class="borderInput w-full flex flex-row justify-between mt-5 border-none border-black relative">
+                            <i class="fa-solid fa-envelope absolute top-1/2 left-2 -translate-y-1/2"></i>
+                            <input type="email" placeholder="Email Address" id="email"
+                                class="pl-8 w-full outline-none text-left border-2 border-black text-black py-2 w-contain placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                        </div>
+                        <div
+                            class="borderInput w-full flex flex-row justify-between mt-5 border-none border-black relative">
+                            <i class="fa-solid fa-user-pen absolute top-1/2 left-2 -translate-y-1/2"></i>
+                            <input type="name" placeholder="Username" id="username"
+                                class="pl-8 w-full outline-none text-left border-2 border-black text-black py-2 w-contain placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="error font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                        </div>
+                        <div
+                            class="borderInput w-full flex flex-row justify-between mt-5 border-0 border-black relative">
+                            <i class="fa-solid fa-phone absolute top-1/2 left-2 -translate-y-1/2"></i>
+                            <input type="number" placeholder="Phone Number" id="tel-number"
+                                class="pl-8 w-full outline-none text-left border-2 border-black text-black py-2 w-contain placeholder:text-black font-medium focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="error font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                        </div>
+                        <div
+                            class="borderInput w-full flex flex-row justify-between mt-5 border- border-black relative">
+                            <i class="fa-solid fa-lock absolute top-1/2 left-2 -translate-y-1/2"></i>
+                            <input type="password" placeholder="Password" id="password"
+                                class="pl-8 w-full outline-none text-left  text-black py-2 w-contain placeholder:text-black font-medium border-2 border-black focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="error font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                            <i id="eye-icon" class="fa-solid fa-eye absolute top-1/2 right-3 -translate-y-1/2"></i>
+                            <!-- <i id="seer" class="hidden fa-solid fa-eye-slash absolute top-1/2 right-3 -translate-y-1/2"></i> -->
+                        </div>
+                        <div
+                            class="borderInput rounded-xl w-full flex flex-row justify-between mt-5 border-0 border-black relative">
+                            <i class="fa-solid fa-lock absolute top-1/2 left-2 -translate-y-1/2"></i>
+                            <input type="password" placeholder="Confirm Password" id="confirm-password"
+                                class="pl-8 w-full outline-none border-2 border-black text-left  text-black py-2 w-contain placeholder:text-black font-medium  focus:outline-none focus:border-green-600 sm:text-sm">
+                            <div
+                                class="error font-semibold italic text-red-500 text-xs absolute top-1/2 right-0 translate-y-5">
+                            </div>
+                            <i id="eye-icon2" class="fa-solid fa-eye absolute top-1/2 right-3 -translate-y-1/2"></i>
+                            <!-- <i class="fa-solid fa-eye-slash absolute top-1/2 right-3 -translate-y-1/2"></i> -->
+                        </div>
+                        <div class="mt-5">
+                            <button id="register-btn" disabled="true"
+                                class="w-full bg-green-600 py-3 font-medium text-center text-white rounded-xl disabled:opacity-50">Register
+                                Now</button>
+                        </div>
+
+                        <div class="text-xs flex justify-between items-center mt-3">
+                            <p class="font-bold">Already have an account?</p>
+                            <button
+                                class="py-2 px-5 border rounded-xl bg-yellow-400 font-bold hover:scale-110 duration-100"><a
+                                    href="login.html">Login</a></button>
+                        </div>
+                    </form>
+                    <!-- -translate-y-full -->
+                </div>
+            </div>
+    </section>
+    <!-- Sign up Confirmation -->
+    <section id="signup"
+        class="hidden w-full overflow-x-hidden -bottom-8 bg-blue-400 bg-opacity-60 min-h-screen flex items-center justify-center shadow-lg -translate-y-full">
+        <div class="p-10 text-center w-full bg-white lg:flex-row lg:w-3/12 shadow-lg rounded-xl">
+            <div>
+                <p class="-mr-7 py-2 pb-3.5 text-green-600 text-6xl"><i class="fa-solid fa-door-open"></i></p>
+                <h2 class="text-2xl text font-bold mb-2">Welcome</h2>
+                <p class="font-semibold text-xl">Your SolarByte account has been created. Kindly check your email for
+                    confirmation.</p>
+            </div>
+
+            <div class="mt-5">
+                <button id="login"
+                    class="w-4/12 bg-green-600 disabled:opacity-50 py-2 font-medium text-center text-white rounded-lg shadow-lg">Login</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Error Modal -->
+    <section id="errorSign"
+        class="hidden bg-gray-400 min-h-screen flex items-center justify-center shadow-lg -translate-y-full">
+        <div class="p-10 text-center container mx-auto w-1/4 bg-white lg:flex-row lg:w-3/12 shadow-lg rounded-xl">
+            <div>
+                <p class="py-2 pb-3.5 text-red-600 text-6xl"><i class="fa-solid fa-circle-exclamation"></i></p>
+                <h2 class="text-2xl text font-bold mb-2">Error occured</h2>
+                <p class="font-semibold text-sm">Account creation was unsuccessful. Try again</p>
+            </div>
+
+            <div class="mt-5">
+                <button id="errorOk"
+                    class="w-4/12 bg-green-600 py-2 font-medium text-center text-white rounded-lg shadow-lg">OK</button>
+            </div>
+        </div>
+    </section>
+    <script src="../build/js/signup.js"></script>
+    <script src="../build/js/signupApi.js"></script>
+</body>
+
+</html>
